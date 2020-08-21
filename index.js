@@ -53,7 +53,7 @@ async function commit() {
   await git.addConfig('user.name', actor);
   await git.addConfig('user.email', email);
   await git.commit(LANG);
-  // await git.push();
+  await git.push();
 }
 
 try {

@@ -18135,7 +18135,7 @@ async function commit() {
   await git.addConfig('user.name', actor);
   await git.addConfig('user.email', email);
   await git.commit(LANG);
-  // await git.push();
+  await git.push();
 }
 
 try {
@@ -18143,26 +18143,6 @@ try {
 } catch (error) {
   throw new Error(error);
 }
-
-// async function a() {
-//   const d = await Axios.get(`https://api.github.com/users/${'dephraiim'}/events`);
-//   let email;
-//   await d.data.forEach((data) => {
-//     if (data.type === 'PushEvent') {
-//       email = data.payload.commits[0].author.email;
-//     } else {
-//       email = '41898282+github-actions[bot]@users.noreply.github.com';
-//     }
-//   });
-
-//   console.log(email);
-// }
-
-// try {
-//   a();
-// } catch (err) {
-//   throw err;
-// }
 
 
 /***/ }),
