@@ -20,7 +20,7 @@ const README = 'README.md' || 'readme.md';
 const mainDir = '.';
 const readme = readFileSync(join(mainDir, README), { encoding: 'utf8' });
 const readmeAST = toAst(readme);
-let LANG = 'I am Groot ';
+let LANG = 'I am groot';
 
 visit(readmeAST, (node) => {
   if (
