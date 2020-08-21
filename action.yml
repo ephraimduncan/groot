@@ -1,4 +1,4 @@
-name: I am Groot
+name: Groot Action
 author: Ephraim Atta-Duncan
 description: Changes Readme to Groot's Language
 
@@ -7,5 +7,5 @@ runs:
   main: dist/index.js
 
 branding:
-  icon: git-commit
+  icon: shield
   color: black
