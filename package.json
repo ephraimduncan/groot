@@ -1,0 +1,27 @@
+{
+  "name": "groot",
+  "version": "1.0.0",
+  "description": "Change Markdown to Groot's Language",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build ./index.js -o dist --source-map",
+    "build:commit": "npm run build && git add . && git commit"
+  },
+  "keywords": [
+    "groot",
+    "hodor"
+  ],
+  "author": "Ephraim Atta-Duncan",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "remark-parse": "^8.0.3",
+    "remark-stringify": "^8.1.1",
+    "simple-git": "^2.19.0",
+    "unified": "^9.1.0",
+    "unist-util-visit": "^2.0.3"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.23.0"
+  }
+}

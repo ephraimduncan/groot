@@ -1,0 +1,11 @@
+name: I am Groot
+author: Ephraim Atta-Duncan
+description: Changes Readme to Groot's Language
+
+runs:
+  using: node12
+  main: dist/index.js
+
+branding:
+  icon: git-commit
+  color: black
