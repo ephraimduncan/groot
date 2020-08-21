@@ -1,63 +1,47 @@
-I am Groot [I am Groot ](https://github.com/facebook/create-react-app).
+<div align="center">
+<img src="http://www.pngall.com/wp-content/uploads/4/Baby-Groot-Transparent.png" width="250"></img>
+</div>
 
-## I am Groot 
+# Groot
 
-I am Groot 
+This Github Action translates your readme into Groot's language. `I am Groot`
 
-### `I am Groot `
+## Setup
 
-I am Groot <br />I am Groot [I am Groot ](http://localhost:3000)I am Groot 
+1. **Add a workflow file** to your project (e.g. `.github/workflows/groot.yml`):
 
-I am Groot <br />I am Groot 
+   ```yml
+   name: I am Groot!
 
-### `I am Groot `
+   on:
+     push:
+       branches:
+         - main
+         - master
 
-I am Groot <br />I am Groot [I am Groot ](https://facebook.github.io/create-react-app/docs/running-tests)I am Groot 
+   jobs:
+     build:
+       runs-on: ubuntu-latest
+       steps:
+         - uses: actions/checkout@v2
+         - name: Setup Node.js
+           uses: actions/setup-node@v1
+           with:
+             node-version: 12.x
+         - name: Groot Action
+           uses: dephraiim/groot@main
+   ```
 
-### `I am Groot `
+## Configuration
 
-I am Groot `I am Groot `I am Groot <br />I am Groot 
+### Options
 
-I am Groot <br />I am Groot 
+- I am Groot.
 
-I am Groot [I am Groot ](https://facebook.github.io/create-react-app/docs/deployment)I am Groot 
+### Development
 
-### `I am Groot `
+Suggestions and contributions are always welcome!
 
-**I am Groot `I am Groot `I am Groot **
+### LICENSE
 
-I am Groot `I am Groot `I am Groot 
-
-I am Groot `I am Groot `I am Groot 
-
-I am Groot `I am Groot `I am Groot 
-
-## I am Groot 
-
-I am Groot [I am Groot ](https://facebook.github.io/create-react-app/docs/getting-started).
-
-I am Groot [I am Groot ](https://reactjs.org/).
-
-### I am Groot 
-
-I am Groot [I am Groot ](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### I am Groot 
-
-I am Groot [I am Groot ](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### I am Groot 
-
-I am Groot [I am Groot ](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### I am Groot 
-
-I am Groot [I am Groot ](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### I am Groot 
-
-I am Groot [I am Groot ](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `I am Groot `I am Groot 
-
-I am Groot [I am Groot ](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT](./LICENSE)
