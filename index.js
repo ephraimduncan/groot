@@ -47,12 +47,10 @@ async function commit() {
     }
   });
 
-  actor = author ? author : process.env.GITHUB_ACTOR;
-
   await git.add('./*');
-  await git.addConfig('user.name', actor);
+  await git.addConfig('user.name', author ? author : process.env.GITHUB_ACTOR);
   await git.addConfig('user.email', email);
-  await git.commit(LANG);
+  await git.commit('i am groot 🌳');
   await git.push();
 }
 
