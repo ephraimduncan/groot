@@ -2,46 +2,28 @@
 <img src="http://www.pngall.com/wp-content/uploads/4/Baby-Groot-Transparent.png" width="250"></img>
 </div>
 
-# Groot
+# I am Groot 
 
-This Github Action translates your readme into Groot's language. `I am Groot`
+I am Groot `I am Groot `
 
-## Setup
+## I am Groot 
 
-1. **Add a workflow file** to your project (e.g. `.github/workflows/groot.yml`):
+1.  **I am Groot **I am Groot `I am Groot `I am Groot 
 
-   ```yml
-   name: I am Groot!
+    ```yml
+    I am Groot 
+    ```
 
-   on:
-     push:
-       branches:
-         - main
-         - master
+## I am Groot 
 
-   jobs:
-     build:
-       runs-on: ubuntu-latest
-       steps:
-         - uses: actions/checkout@v2
-         - name: Setup Node.js
-           uses: actions/setup-node@v1
-           with:
-             node-version: 12.x
-         - name: Groot Action
-           uses: dephraiim/groot@main
-   ```
+### I am Groot 
 
-## Configuration
+-   I am Groot 
 
-### Options
+### I am Groot 
 
-- I am Groot.
+I am Groot 
 
-### Development
+### I am Groot 
 
-Suggestions and contributions are always welcome!
-
-### LICENSE
-
-[MIT](./LICENSE)
+[I am Groot ](./LICENSE)
